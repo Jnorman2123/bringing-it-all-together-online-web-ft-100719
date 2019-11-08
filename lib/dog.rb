@@ -70,5 +70,6 @@ class Dog
       dog_hash[:breed] = dog_props[2]
       dog = self.create(dog_hash)
     end
+    dog
   end
 end
