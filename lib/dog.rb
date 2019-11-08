@@ -65,10 +65,7 @@ class Dog
       dog_props = dog[0]
       dog = Dog.new(id: dog_props[0], name: dog_props[1], breed: dog_props[2])
     else
-      dog_hash = {}
-      dog_hash[:name] = dog_props[1]
-      dog_hash[:breed] = dog_props[2]
-      dog = self.create(dog_hash)
+      dog = self.create(name: name, breed: breed)
     end
     dog
   end
